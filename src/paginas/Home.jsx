@@ -8,10 +8,22 @@ function Home() { /* cria função Home */
 
       {/* Exibindo os eventos*/}
       
-<Evento nome="Mundo Senai" data="05/11/2025" local="Auditorio" />
-      <Evento nome="Natal" data="25/12/2025" local="Casa" />
-      <Evento nome="Novo capítulo" data="12/11/2025" local="Casa" />
+<div className="eventos"> 
+ <Evento nome="Mundo Senai"  
+data="05/11/2025" 
+local="Auditorio" /> 
+
+      <Evento nome="Natal"  
+       data="25/12/2025" 
+       local="Casa" />
+       
+      <Evento nome="Novo capítulo" 
+       data="12/11/2025"  
+       local="Casa" />
+    </div>
+
     </main>
+    
   );
 }
 export default Home; /* Exporta o componente Home (página) */

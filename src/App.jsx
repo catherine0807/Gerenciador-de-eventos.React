@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
-import Header from "./componentes/Header"; /* importa o cabeçalho */
-import Footer from "./componentes/Footer"; /* importa o rodapé */
+import Header from "./header/Header"; /* importa o cabeçalho */
+import Footer from "./footer/Footer"; /* importa o rodapé */
 import Home from "./paginas/Home"; /* importa os componentes da pagina */
 import Sobre from "./paginas/Sobre"; /* importa os componentes da pagina */
 import "./style.css"; /* importa arquivo CSS */
-
-
+import "./header/header.css";
+import "./footer/footer.css";
 function App() { /* cria função app */
   return ( /* diz que Vai retornar */
     <Router> {/* habilita o uso das rotas */}
@@ -14,9 +14,7 @@ function App() { /* cria função app */
 
 
         {/* Menu de navegação */}
-        <nav> 
-          <Link to="/">Início</Link> | <Link to="/sobre">Sobre</Link>  {/* Levam para suas páginas */}
-        </nav> 
+       
 
 
         {/* Definição das rotas */}

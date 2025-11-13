@@ -12,10 +12,13 @@
 /* Define as cores, fonte e alinhamento geral */
 body {
   font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-  background-color: #ffffff; /* Fundo cinza-claro */
-  color: #000000;               /* Cor principal do texto */
-  text-align: center;        /* Centraliza textos genéricos */
-  min-height: 100vh;         /* Garante altura mínima de tela cheia */
+  color: #000000;                  /* Cor principal do texto */
+  text-align: center;              /* Centraliza textos genéricos */
+  min-height: 100vh;               /* Garante altura mínima de tela cheia */
+
+  /* Configuração do background */
+  background: linear-gradient(to right, rgba(209, 140, 230, 0.8), rgb(217, 162, 231));
+  /* Faz a imagem cobrir toda a tela */
 }
 
 /* Container principal da aplicação */
@@ -30,15 +33,7 @@ body {
    CABEÇALHO (HEADER)
    =============================== */
 
-header {
-  width: 100%;                        /* Ocupa toda a largura */
-  background-color: #bd69e4;          /* Azul padrão SENAI */
-  color: rgb(245, 245, 245);                       /* Texto branco */
-  padding: 20px 0;                    /* Espaçamento interno */
-  font-size: 1.6em;                   /* Tamanho de texto maior */
-  font-weight: bold;                  /* Texto em negrito */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra abaixo do cabeçalho */
-}
+
 
 /* Estilo do menu principal de navegação */
 .menu-principal {
@@ -60,16 +55,20 @@ header {
    CONTEÚDO PRINCIPAL
    =============================== */
 
-main {
-  margin-top: 30px;
-  width: 90%;
-  max-width: 900px;
-}
+   main {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto; /* Centraliza o container */
+   margin-right: auto;
+    text-align: center;
+  }
 
 /* Título principal das páginas */
 h1 {
-  color: #005b96;
+  color: #c97dec;
   margin-bottom: 20px;
+  text-align:center;
 }
 
 /* Parágrafos genéricos */
@@ -108,20 +107,36 @@ button:hover,
   background-color: white;               /* Fundo branco */
   border-radius: 10px;                   /* Cantos arredondados */
   padding: 20px;
+  background-color: rgb(240, 142, 218);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(240, 178, 214, 0.2);
+  width: 50px;
+  text-align: center;
+  margin: 5px 0; /* espaço entre as caixas */
+  display: flex;
 }
 
-footer{
-  width: 100%;                        /* Ocupa toda a largura */
-  background-color: #ffffff;          /* Azul padrão SENAI */
-  color: white;                       /* Texto branco */
-  padding: 20px 0;                    /* Espaçamento interno */
-  font-size: 1.6em;                   /* Tamanho de texto maior */
-  font-weight: bold;                  /* Texto em negrito */
-  box-shadow: 0 3px 8px white(0, 0, 0, 0.2); 
-  bottom: 10; /* Fixa o footer na parte inferior da janela */
-position: fixed;
-bottom: 0;
-width: 100%;
-background-color: #bd69e4;
 
+
+.evento {
+  background-color: #d0ace6;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  
 }
+.evento:hover {
+  transform: scale(1.05);
+  background-color: #e1bfee;
+  display: flex;
+}
+
+
+
+
+

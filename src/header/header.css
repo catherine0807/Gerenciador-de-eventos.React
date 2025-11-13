@@ -1,0 +1,9 @@
+header {
+    width: 100%;                        /* Ocupa toda a largura */
+    background-color: #c984e9;          /* Azul padrão SENAI */
+    color: rgb(255, 255, 255);                       /* Texto branco */
+    padding: 20px 0;                    /* Espaçamento interno */
+    font-size: 1.6em;                   /* Tamanho de texto maior */
+    font-weight: bold;                  /* Texto em negrito */
+    box-shadow: 0 3px 8px rgb(165, 94, 196); /* Sombra abaixo do cabeçalho */
+  }
