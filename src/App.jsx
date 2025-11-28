@@ -1,32 +1,40 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
-import Header from "./header/Header"; /* importa o cabeçalho */
-import Footer from "./footer/Footer"; /* importa o rodapé */
-import Home from "./paginas/Home"; /* importa os componentes da pagina */
-import Sobre from "./paginas/Sobre"; /* importa os componentes da pagina */
-import "./style.css"; /* importa arquivo CSS */
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
+import Home from "./paginas/Home";
+import Sobre from "./paginas/Sobre";
+import CadastroEvento from "./paginas/CadastroEvento";
+import "./style.css";
 import "./header/header.css";
 import "./footer/footer.css";
-function App() { /* cria função app */
-  return ( /* diz que Vai retornar */
-    <Router> {/* habilita o uso das rotas */}
-      <div className="app"> {/* abre uma classe para o CSS */}
-        <Header /> {/* renderiza o cabeçalho do app */}
+import "./paginas/cadastroEvento.css";
+import "./componentes/modal.css";
 
 
-        {/* Menu de navegação */}
-       
+function App() {
+  const [eventos, setEventos] = useState([]);
 
+  const handleCadastrar = (novoEvento) => {
+    setEventos((prev) => [...prev, novoEvento]);
+  };
 
-        {/* Definição das rotas */}
-        <Routes> {/* define o que será mostrado em cada link */}
-          <Route path="/" element={<Home />} /> 
-          <Route path="/sobre" element={<Sobre />} /> 
-        </Routes> 
+  return (
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home eventos={eventos} />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route
+            path="/CadastroEvento"
+            element={<CadastroEvento onCadastrar={handleCadastrar} />}
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
 
-        <Footer /> {/* renderiza o rodapé */}
-      </div> {/* fecha div */}
-    </Router> /* fecha Router */
-  ); 
-} /* fecha função */
-
-export default App; /* exporta o componente app */
+export default App;
