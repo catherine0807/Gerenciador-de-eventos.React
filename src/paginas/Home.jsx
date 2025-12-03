@@ -11,21 +11,15 @@ function Home({ eventos }) {
       <Evento nome="Mundo Senai" 
       data="05/11/2025" 
       local="Auditório" />
-      <Evento nome="Passeio didático"
+      <Evento nome="Passeio Escolar"
        data="25/10/2025" 
-       local="Floresta do Chapecó" />
-      <Evento nome="EFAPI"
-       data="17/10/2025"
-        local="EFAPI" />
+       local="São carlos" />
       <Evento nome="Mundo SENAI" 
       data="15/11/2025"
        local="Auditório" />
-      <Evento nome="Volta das férias" 
-      data="02/12/2025" 
-      local="EEB Tancredo de Almeida Neves" />
-      <Evento nome="Publicação do Novo capítulo de TADC" 
+      <Evento nome="Novo capitulo" 
       data="12/12/2025"
-       local="YouTube" />
+      local="Online" />
 
       {/* Eventos dinâmicos */}
       {eventos && eventos.length > 0 && (

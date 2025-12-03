@@ -4,7 +4,7 @@
     justify-self: center;
     max-width: 550px;
     margin: 100px;
-    background-image: linear-gradient(to top, rgb(213, 121, 255), rgb(255, 244, 145));
+    background-image: linear-gradient(to top, rgb(209, 147, 238), rgb(233, 186, 243));
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0px 4px 12px;
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
     font-size: 50px;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 221), 0 0 5px rgb(255, 230, 0);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(207, 170, 231), 0 0 5px rgb(222, 122, 231);
 }
 
 .form-evento {
@@ -49,7 +49,7 @@
 }
 
 .btn-voltar, .btn-salvar {
-    background-color: rgb(255, 253, 122);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 15px;
@@ -58,12 +58,12 @@
     font-size: 16px;
 }
 .btn-salvar:hover{
-    background-color: rgb(255, 196, 86);
+    background-color: rgb(255, 255, 255);
     transform: translateY(-1px);
 }
 
 .btn-voltar:hover{
-    background-color: rgb(255, 196, 86);
+    background-color: rgb(255, 255, 255);
     transform: translateY(-1px);
     
 }

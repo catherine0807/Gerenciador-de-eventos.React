@@ -1,15 +1,15 @@
-footer{
-    width: 100%;                        /* Ocupa toda a largura */
-    background-color: #ffffff;          /* Azul padrão SENAI */
-    color: rgb(255, 255, 255);                       /* Texto branco */
-    padding: 20px 0;                    /* Espaçamento interno */
-    font-size: 1.6em;                   /* Tamanho de texto maior */
-    font-weight: bold;                  /* Texto em negrito */
-    box-shadow: 0 3px 8px white(0, 0, 0, 0.2); 
-    bottom: 10; /* Fixa o footer na parte inferior da janela */
-  position: fixed;
+footer {
+  width: 100%;                        
+  background: #d1b2eb;                 /* Lilás suave */
+  color: #ffffff;                      /* Texto branco */
+  padding: 20px 0;                     /* Espaçamento interno */
+  font-size: 1.2em;                    /* Tamanho de texto agradável */
+  font-weight: 600;                    /* Texto em semi-negrito */
+  text-align: center;                  /* Centraliza conteúdo */
+  position: fixed;                     /* Fixa no rodapé */
   bottom: 0;
-  width: 100%;
-  background-color: #bd69e4;
-  
-  }
+  left: 0;
+  box-shadow: 0 -3px 8px rgba(155, 89, 182, 0.3); /* Sombra lilás suave para cima */
+  border-top: 3px solid #e6c9f7;       /* Linha lilás clara para acabamento */
+  z-index: 1000;                       /* Garante que fique acima de outros elementos */
+}
